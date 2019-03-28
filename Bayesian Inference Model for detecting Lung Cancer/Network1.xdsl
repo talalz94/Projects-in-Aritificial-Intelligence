@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Node8">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Node9">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node8</parents>
+			<probabilities>0.1 0.9 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Node10">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node8</parents>
+			<probabilities>0.3 0.7 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Node18">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Node17">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node18 Node9</parents>
+			<probabilities>0.3 0.7 0.3 0.7 0.05 0.95 0.001 0.999</probabilities>
+		</cpt>
+		<cpt id="Node11">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node10 Node9 Node17</parents>
+			<probabilities>0.8 0.2 0.8 0.2 0.8 0.2 0.8 0.2 0.5 0.5 0.5 0.5 0.5 0.5 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Node12">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node17 Node10</parents>
+			<probabilities>0.9 0.1 0.9 0.1 0.9 0.1 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Node13">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.35 0.65</probabilities>
+		</cpt>
+		<cpt id="Node14">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node13</parents>
+			<probabilities>0.9 0.1 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Node15">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node17 Node13</parents>
+			<probabilities>0.9 0.1 0.9 0.1 0.2 0.8 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Node16">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Node9 Node17</parents>
+			<probabilities>0.9 0.1 0.9 0.1 0.9 0.1 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="Node8">
+				<name>Smoking</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>459 35 571 99</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node9">
+				<name>Lung Cancer</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>444 152 558 221</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node10">
+				<name>Bronchitis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>603 162 722 227</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node11">
+				<name>Shortness of breath</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>611 300 743 375</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node12">
+				<name>Cough</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>434 314 563 385</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node13">
+				<name>Common Cold</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>43 115 174 190</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node14">
+				<name>Rhinorrhea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>9 332 119 398</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node15">
+				<name>Fever</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>146 327 271 393</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node16">
+				<name>Chest Pain</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>299 271 417 336</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node17">
+				<name>Pneumonia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>251 149 362 217</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node18">
+				<name>Weak Immune System</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>240 29 377 96</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
